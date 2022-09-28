@@ -31,7 +31,6 @@ services:
       START_ODOO: "/opt/odoo/odoo/odoo-bin -c /opt/odoo/odoo.conf"
       ODOO_PARAM: ""
     depends_on:
-      - nginx
       - postgres
     restart: unless-stopped
     tty: true
