@@ -4,7 +4,7 @@
 #      novobidevops/odoo:13
 #      novobidevops/odoo:12
 
-FROM novobidevops/odoo:14
+FROM novobidevops/odoo:16
 
 # Example 1: Install new python libs in the new image
 # RUN pip3 install --no-cache-dir paramiko
