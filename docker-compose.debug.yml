@@ -6,7 +6,7 @@ services:
     #   image: novobidevops/odoo:[odoo_version]
     # Available [odoo_version]: 16
 
-    image: novobidevops/odoo:15
+    image: novobidevops/odoo:16
     # build: ./box
 
     # If developer want to use their own Docker environment, Do the following actions : 
@@ -34,8 +34,6 @@ services:
       - postgres
     restart: unless-stopped
     tty: true
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
   nginx:
     image: nginx
     ports:
