@@ -10,6 +10,8 @@ FROM novobidevops/odoo:16
 # RUN pip3 install --no-cache-dir paramiko
 
 # Example 2: Install new python libs from the requirement file
+# USER root
 # COPY python3-requirements.txt /etc/
 # RUN pip3 install --no-cache-dir -r /etc/python3-requirements.txt
 # RUN rm /etc/python3-requirements.txt
+# USER odoo
