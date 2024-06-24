@@ -3,10 +3,12 @@
     "configurations": [
         {
             "name": "Odoo: Debug",
-            "type": "python",
+            "type": "debugpy",
             "request": "attach",
-            "port": 8888,
-            "host": "localhost",
+            "connect": {
+                "host": "localhost",
+                "port": 8888
+            },
             "preLaunchTask": "debug-odoo",
             "postDebugTask": "re-run-odoo",
             "pathMappings": [
