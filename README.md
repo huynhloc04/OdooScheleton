@@ -1,1 +1,1 @@
-# OdooProjectSkeleton using Docker
+# OdooProjectSkeleton using Docker for VSCode
