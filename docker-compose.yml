@@ -8,6 +8,7 @@ services:
       - ./:/opt/odoo
       - odoo_data:/var/lib/odoo
     command: bash -c "$${PYTHON_PATH} $${START_ODOO} $${ODOO_PARAM} && tail -f /dev/null"
+    tty: true
     environment:
       PYTHON_PATH: "python3"
       START_ODOO: "/opt/odoo/odoo/odoo-bin -c /opt/odoo/odoo.conf"
@@ -15,6 +16,7 @@ services:
     depends_on:
       - postgres
     restart: unless-stopped
+
   nginx:
     image: nginx
     ports:
@@ -24,6 +26,7 @@ services:
     depends_on:
       - odoo
     restart: unless-stopped
+  
   postgres:
     image: postgres:16
     ports:

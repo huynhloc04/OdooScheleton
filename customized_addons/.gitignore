@@ -1,0 +1,8 @@
+__pycache__
+odoo_requirements
+secrets
+.scannerwork
+.idea
+.vscode
+shared_volume
+git.env
